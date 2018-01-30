@@ -23,6 +23,13 @@
   <class pattern="edm::Wrapper<edmNew::DetSetVector<TTTrack<*>>>" />
   <class pattern="edm::Ref<edmNew::DetSetVector<TTTrack<*>>,TTTrack<*>,edmNew::DetSetVector<TTTrack<*>>::FindForDetSetVector>" />
   <class pattern="edm::Wrapper<edm::Ref<edmNew::DetSetVector<TTTrack<*>>,TTTrack<*>,edmNew::DetSetVector<TTTrack<*>>::FindForDetSetVector>>" />
+  <class name="TTPixelTrack" />
+  <class name="std::vector<TTPixelTrack>" />
+  <class name="edm::Wrapper<std::vector<TTPixelTrack>>" />
+  <class name="edmNew::DetSetVector<TTPixelTrack>" />
+  <class name="edm::Wrapper<edmNew::DetSetVector<TTPixelTrack>>" />
+  <class name="edm::Ref<edmNew::DetSetVector<TTPixelTrack>,TTPixelTrack,edmNew::DetSetVector<TTPixelTrack>::FindForDetSetVector>" />
+  <class name="edm::Wrapper<edm::Ref<edmNew::DetSetVector<TTPixelTrack>,TTPixelTrack,edmNew::DetSetVector<TTPixelTrack>::FindForDetSetVector>>" />
 
  <class name="L1TkPrimaryVertex" ClassVersion="11">
   <version ClassVersion="11" checksum="863057557"/>

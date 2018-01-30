@@ -40,6 +40,7 @@
 
 #include "DataFormats/Common/interface/RefVector.h"
 #include "DataFormats/Common/interface/RefProd.h"
+#include "DataFormats/L1TrackTrigger/interface/TTPixelTrack.h"
 
 namespace
 {
@@ -96,6 +97,22 @@ namespace
     edm::Wrapper< std::vector< edm::Ref< edmNew::DetSetVector< TTTrack< Ref_Phase2TrackerDigi_ > >, TTTrack< Ref_Phase2TrackerDigi_ > > > > W_V_R_T_PD;
   };
 
+
+  struct dictionarypixeltrack {
+    /// TTPixelTrack and containers
+    TTPixelTrack TT_PT;
+    std::vector< TTPixelTrack >                        V_TT_PT;
+    edm::Wrapper< std::vector< TTPixelTrack > >        W_V_TT_PT;
+    edmNew::DetSetVector< TTPixelTrack >               SDV_TT_PT;
+    edm::Wrapper< edmNew::DetSetVector< TTPixelTrack > > W_SDV_TT_PT;
+
+    /// edm::Ref to TTPixelTrack in edmNew::DetSetVector and containers
+    edm::Ref< edmNew::DetSetVector< TTPixelTrack >, TTPixelTrack>                                 R_TT_PT;
+    edm::Ptr< TTPixelTrack >                                                                      P_TT_PT;
+    edm::Wrapper< edm::Ref< edmNew::DetSetVector< TTPixelTrack >, TTPixelTrack > >                 W_R_TT_PT;
+    std::vector< edm::Ref< edmNew::DetSetVector< TTPixelTrack >, TTPixelTrack> >                  V_R_TT_PT;
+    edm::Wrapper< std::vector< edm::Ref< edmNew::DetSetVector< TTPixelTrack>, TTPixelTrack> > >  W_V_R_TT_PT;
+  };
 
 //  L1TrackTriggerObjects stuff :
 
